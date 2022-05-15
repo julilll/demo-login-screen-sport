@@ -1,0 +1,4 @@
+<app-login *ngIf="!userIsAuthenticated" (userIsLoggedIn)="getTheUser($event)"></app-login>
+
+<div *ngIf="userIsAuthenticated" class="h-100" style="overflow-y: hidden; overflow-x: hidden;">
+</div>

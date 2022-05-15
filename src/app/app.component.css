@@ -1,0 +1,32 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  background-color: #0c1026;
+  justify-content: center;
+}
+
+.toolbar img {
+  width: 86.95px;
+}
+
+.toolbar a {
+  position: absolute;
+  right: 0;
+  margin-right: 28px;
+}
+
+.mainContent {
+  margin-top: 56px
+}
+
+/* @media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+} */

@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="title">Log In / Register</h1>
+  <form [formGroup]="loginForm" class="formField">
+    <input type="email" placeholder="yaron@sidelines.io" formControlName="email" required>
+  </form>
+  <p *ngIf="loginError" class="errorAlert">The user doesn't exists in the system</p>
+  <p *ngIf="signupError" class="errorAlert">The user already exists in the system</p>
+  <div class="buttonsContainer">
+    <div class="buttonField">
+      <button class="mainButton" type="submit" (click)="onSubmit('login')">LOGIN</button>
+    </div>
+    <div class="buttonField">
+      <button class="mainButton" type="submit" (click)="onSubmit('signup')">SIGNUP</button>
+    </div>
+  </div>
+</div>
